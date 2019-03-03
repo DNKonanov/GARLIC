@@ -1,5 +1,5 @@
 from parser.gparser import GraphParser
-from operations import Weights, Uniq, Include, Len
+from parser.operations import Weights, Uniq, Include, Len
 
 
 class Graph:
