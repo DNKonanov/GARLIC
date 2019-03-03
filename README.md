@@ -34,7 +34,7 @@ Available templates:
 
 
 
-### Language sprepecification
+### Language specification
 Add edge between 1 and 2: ___'1' > '2'___ or ___'1' {PARAMS} '2'___ where:
 __'?'__ -  name of vertex
 **PARAMS**:
