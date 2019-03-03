@@ -1,3 +1,39 @@
+# GARLIC finder
+
+## Dependencies
+
+* Python 3.4+
+* 'gene-graph-lib' library
+
+## Usage
+
+This tool uses a graph form of genomes set representation, that is coded in sif format
+To find some subgraph we need to describe it as a string template type in terminal
+
+`python3 find_template_script.py --graph PATH_to_sif_file --template "TEMPLATE"`
+
+for example
+
+`python3 find_template_script.py --graph Escherichia_coli.sif --template "'1'>'2'; '2'>'3'; '1'>'3'"`
+
+There are some optimized patterns, which can be computed faster than by universal algorithm
+Such template can be chosen by `--type` option.
+
+
+for example
+
+`python3 find_template_script.py --graph Escherichia_coli.sif --type spider"`
+
+Available templates:
+* spider
+* penguin
+* garlic
+
+
+
+
+
+### Language sprepecification
 Добавть ребро между 1 и 2: ___'1' > '2'___ или ___'1' {PARAMS} '2'___
 где:
 ___\'?\'___ имя переменной
