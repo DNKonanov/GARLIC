@@ -64,6 +64,24 @@ def _filter_by_genomes(templates_candidates, g):
 
 
 def find_template(template, g):
+    """
+    Reads a sif file and creates a graph structure
+    Parameters
+    ----------
+    template : list
+        List structure with parsed template
+     
+        ...
+    g : object
+        GenomeGraph object, which contain infomation about graph structure
+        Class GenomeGraph is described in gene_graph_lib.compute_complxity library
+        
+    Return
+    ------
+    filtered_templates: list
+        List of all template matches found in graph structure
+	
+    """
     #crete template adj matrix
     print('Create template adj matrix...')
     clear_edges = template[0]
