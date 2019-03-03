@@ -11,11 +11,11 @@ This tool uses a graph form of genomes set representation, that is coded in sif 
 
 To find some subgraph we need to describe it as a string template type in terminal
 
-`python3 find_template_script.py --graph PATH_to_sif_file --template "TEMPLATE"`
+`python3 find_templates_script.py --graph PATH_to_sif_file --template "TEMPLATE"`
 
 for example
 
-`python3 find_template_script.py --graph Escherichia_coli.sif --template "'1'>'2'; '2'>'3'; '1'>'3'"`
+`python3 find_templates_script.py --graph Escherichia_coli.sif --template "'1'>'2'; '2'>'3'; '1'>'3'"`
 
 There are some optimized patterns, which can be computed faster than by universal algorithm
 Such template can be chosen by `--type` option.
@@ -23,7 +23,7 @@ Such template can be chosen by `--type` option.
 
 for example
 
-`python3 find_template_script.py --graph Escherichia_coli.sif --type spider"`
+`python3 find_templates_script.py --graph Escherichia_coli.sif --type spider"`
 
 Available templates:
 * spider
