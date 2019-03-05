@@ -21,10 +21,10 @@ if args.type == None:
     hits = find_template(template, g)
 
 elif args.type == 'spider':
-    hits = find_spyder(template, g)
+    hits = find_spyder(g)
 
 elif args.type == 'penguin':
-    hits = find_transposition(template, g)
+    hits = find_transposition(g)
 
 elif args.type == 'spider':
     garlic = GarlicPattern()
