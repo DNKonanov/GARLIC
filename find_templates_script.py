@@ -1,7 +1,7 @@
 from search.VF2_find_template import find_template
 import argparse
 from gene_graph_lib.compute_complexity import GenomeGraph
-from gene_graph_lib.pattern_searching import find_spyder, find_transposition, find_garlic, find_smile
+from gene_graph_lib.pattern_searching import find_spyder, find_transposition, find_garlic
 from parser.graphbuilder import Graph
 
 
@@ -34,9 +34,7 @@ else:
 
     elif args.type == 'garlic':
         hits = find_garlic(g)
-
-    elif args.type == 'smile':
-        hits = find_smile(g)
+    
     else:
         print('invalid pattern type')
 
